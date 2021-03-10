@@ -1,0 +1,130 @@
+مابياخد شي وبيرجع كل الطلاب الموجودين عندي
+http://gene-team.com/public/api/students get
+
+بياخد اي دي الطالب وبيرجع تفاصيل الطالب 
+http://gene-team.com/public/api/students/id get
+مثال:{
+    "id": 1,
+    "userName": "ahmad jamal aldeen",
+    "created_at": "2020-11-10T07:49:54.000000Z",
+    "updated_at": "2020-11-10T07:49:54.000000Z"
+}
+
+
+
+بياحد student_id وبيرحع الاكواد تبعاتو
+http://gene-team.com/public/api/students/studentCodes post
+مثال:[
+    {
+        "id": 1,
+        "code": "RBCs-fRYQXP2vCDpcvuqNt1N4TiXSfjT3CtEqkkGP7QBj",
+        "team_id": 1,
+        "semester_id": 1,
+        "student_id": 1,
+        "created_at": "2020-11-08T11:11:44.000000Z",
+        "updated_at": "2020-11-10T08:03:14.000000Z"
+    }
+]
+
+
+
+
+
+
+بياخد الstuden_id وبيرجع كل الفرق يلي مشترك فيها
+http://gene-team.com/public/api/students/studentTeams post
+هدون كلن فريق واحد بس اكتر من حساب ف انت خود النيم تبعهن 
+مثال:{
+    "0": {
+        "id": 1,
+        "userName": "team1qqsy@gmail.com",
+        "password": "123",
+        "created_at": "2020-11-08T05:18:11.000000Z",
+        "updated_at": "2020-11-15T14:30:28.000000Z",
+        "type": 1,
+        "name": "RBCs"
+    },
+    "3": {
+        "id": 4,
+        "userName": "s",
+        "password": "123123",
+        "created_at": "2020-11-10T12:21:14.000000Z",
+        "updated_at": "2020-11-10T12:21:14.000000Z",
+        "type": 1,
+        "name": "RBCs"
+    }
+}
+
+
+
+
+
+
+
+بياخد الstuden_id وبيرجع كل المواد يلي مفتوحة الو
+http://gene-team.com/public/api/students/studentLeacture post
+مثال:[
+    [
+        {
+            "id": 1,
+            "name": "first-pdf",
+            "lecture": "first-pdf.pdf",
+            "course_id": 1,
+            "created_at": "2020-11-08T09:19:40.000000Z",
+            "updated_at": "2020-11-08T09:19:40.000000Z"
+        },
+        {
+            "id": 2,
+            "name": "secound-pdf",
+            "lecture": "secound-pdf.pdf",
+            "course_id": 1,
+            "created_at": "2020-11-08T09:21:55.000000Z",
+            "updated_at": "2020-11-08T09:21:55.000000Z"
+        }
+    ],
+    [],
+    []
+]
+
+
+
+
+
+
+بياخد الstuden_id وبيرجع كل المواد يلي مفتوحة الو
+http://gene-team.com/public/api/students/studentCourses post
+مثال:[
+    {
+        "id": 1,
+        "name": "ADS",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T11:17:50.000000Z",
+        "updated_at": "2020-11-08T07:52:21.000000Z"
+    },
+    {
+        "id": 3,
+        "name": "PR2",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T13:39:45.000000Z",
+        "updated_at": "2020-11-10T11:50:52.000000Z"
+    },
+    {
+        "id": 6,
+        "name": "secound-pdf",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T11:43:23.000000Z",
+        "updated_at": "2020-11-10T11:43:23.000000Z"
+    }
+]
+
+
+
+تخزين طالب
+http://gene-team.com/public/api/students post
+
+http://gene-team.com/public/api/students put
+
+http://gene-team.com/public/api/students delete

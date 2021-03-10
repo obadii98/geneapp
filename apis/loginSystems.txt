@@ -1,0 +1,21 @@
+userName, password
+http://gene-team.com/public/api/admins/login
+
+
+
+
+userName, password
+http://gene-team.com/public/api/team/login
+
+
+
+
+
+userName, password
+http://gene-team.com/public/api/library/login
+
+
+
+
+code
+http://gene-team.com/public/api/code/login

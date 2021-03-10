@@ -1,0 +1,129 @@
+مابياخد شي وبيرجع كل التيمز الموجودين عندي
+http://gene-team.com/public/api/teams get
+
+بياخد اي دي التيم وبيرجع تفاصيل التيم
+http://gene-team.com/public/api/teams/id get
+مثال:{
+    "id": 1,
+    "userName": "team1qqsy@gmail.com",
+    "password": "123123123",
+    "created_at": "2020-11-08T05:18:11.000000Z",
+    "updated_at": "2020-11-08T05:34:38.000000Z",
+    "type": 1,
+    "name": "RBCs"
+}
+
+
+
+بياحد معلومات التيم وبيخزنو بالداتا بيز(بدي اعمل اوثنتكيشن بس مبدءيا هيك)
+http://gene-team.com/public/api/teams post
+
+
+بياخد متغير اسمو team_type و semester_id وبيرجع المواد تبع هالتيم بهالفصل (التيم تايب هو بدل اسم الفريق يعني عنا هلا 5 تايبات 4 منهن فرق والخامس لكل الفرق عاملو)
+http://gene-team.com/public/api/teams/teamcoursesWithSemester post
+مثال:[
+    {
+        "id": 1,
+        "name": "ADS",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T11:17:50.000000Z",
+        "updated_at": "2020-11-08T07:52:21.000000Z"
+    },
+    {
+        "id": 3,
+        "name": "PR2",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T13:39:45.000000Z",
+        "updated_at": "2020-11-10T11:50:52.000000Z"
+    }
+]
+
+
+
+تعديل التيم
+http://gene-team.com/public/api/teams/id update/put
+
+
+
+
+http://gene-team.com/public/api/teams/id delete
+
+
+
+
+
+
+
+بياحد بس ال team_type وبيرجع كلشي مواد الو بغض النظر انو سنة او انو فصل 
+http://gene-team.com/public/api/teams/teamcourses post
+مثال:[
+    {
+        "id": 1,
+        "name": "ADS",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T11:17:50.000000Z",
+        "updated_at": "2020-11-08T07:52:21.000000Z"
+    },
+    {
+        "id": 3,
+        "name": "PR2",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T13:39:45.000000Z",
+        "updated_at": "2020-11-10T11:50:52.000000Z"
+    }
+]
+
+
+
+
+بياخد متغير اسمو team_type و semester_id وبيرجع محاضرات الالمواد تبع هالتيم بهالفصل 
+http://gene-team.com/public/api/teams/teamLectures post
+مثال:[
+    [
+        {
+            "id": 1,
+            "name": "first-pdf",
+            "lecture": "first-pdf.pdf",
+            "course_id": 1,
+            "created_at": "2020-11-08T09:19:40.000000Z",
+            "updated_at": "2020-11-08T09:19:40.000000Z"
+        },
+        {
+            "id": 2,
+            "name": "secound-pdf",
+            "lecture": "secound-pdf.pdf",
+            "course_id": 1,
+            "created_at": "2020-11-08T09:21:55.000000Z",
+            "updated_at": "2020-11-08T09:21:55.000000Z"
+        },
+        {
+            "id": 3,
+            "name": "therd-pdf",
+            "lecture": "C:\\xampp\\tmp\\php8302.tmp",
+            "course_id": 1,
+            "created_at": "2020-11-08T09:47:01.000000Z",
+            "updated_at": "2020-11-08T09:47:01.000000Z"
+        },
+        {
+            "id": 4,
+            "name": "third-pdf",
+            "lecture": "third-pdf.pdf",
+            "course_id": 1,
+            "created_at": "2020-11-12T21:21:00.000000Z",
+            "updated_at": "2020-11-12T21:21:00.000000Z"
+        }
+    ],
+    [],
+    []
+]
+لاحظ هون عندي مصفوفة ممكن يكون فيها كتير اندكس كل اندكس هو حساب لفريق معين لهيك لما ترجع انت محاضرات فريق بدك تعمل حسابك انو الفريق الو اكتر من حساب ولما حساب يرفع محاضرة وحدة كانو الكل رفعها لهيك في اكتر من اندكس كل اندكس بمثل حساب من الفريق
+
+
+
+
+
+

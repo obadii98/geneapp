@@ -1,0 +1,51 @@
+مابياخد شي وبيرجع كل الفصول الموجودين عندي
+http://gene-team.com/public/api/semesters get
+
+بياخد اي دي الفصل وبيرجع تفاصيل الفصل
+http://gene-team.com/public/api/semesters/id get
+مثال:{
+    "id": 1,
+    "name": "first",
+    "year_id": 1,
+    "created_at": "2020-11-08T07:45:43.000000Z",
+    "updated_at": "2020-11-08T07:45:43.000000Z"
+}
+
+
+بياحد اي دي الفصل وبيرجع المواد يلي فيها 
+http://gene-team.com/public/api/semesters/courses/{id} get
+مثال:[
+    {
+        "id": 1,
+        "name": "ADS",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T11:17:50.000000Z",
+        "updated_at": "2020-11-08T07:52:21.000000Z"
+    },
+    {
+        "id": 2,
+        "name": "PR1",
+        "semester_id": 1,
+        "team_id": 2,
+        "created_at": "2020-11-10T11:50:52.000000Z",
+        "updated_at": "2020-11-10T11:50:52.000000Z"
+    },
+    {
+        "id": 3,
+        "name": "PR2",
+        "semester_id": 1,
+        "team_id": 1,
+        "created_at": "2020-11-10T13:39:45.000000Z",
+        "updated_at": "2020-11-10T11:50:52.000000Z"
+    }
+]
+
+
+
+تخزين فصل
+http://gene-team.com/public/api/semesters post
+
+http://gene-team.com/public/api/semesters put
+
+http://gene-team.com/public/api/semesters delete

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "829849482413",
+    "project_id": "geneapp-c7a63",
+    "storage_bucket": "geneapp-c7a63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829849482413:android:f923c89748ff549a87c224",
+        "android_client_info": {
+          "package_name": "com.example.teams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829849482413-3lubdp6f998f1qmmisvb6irjdaff437l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teams",
+            "certificate_hash": "b3406080a6bb6bc377692c8e7ef8b7fb2ca132d5"
+          }
+        },
+        {
+          "client_id": "829849482413-ouspn9f0k61ok6r6n4l6i0ge24v8k4u6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVKBc0oKmRII_EID6JTocTIwPd_EIc2Yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829849482413-ouspn9f0k61ok6r6n4l6i0ge24v8k4u6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
